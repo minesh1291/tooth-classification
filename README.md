@@ -9,7 +9,7 @@
 n_train = 0:52, 1:40
 n_test  = 0:13, 1:10
 
-precision    recall  f1-score   support
+              precision    recall  f1-score   support
 
       1 root       1.00      0.92      0.96        13
   multi-root       0.91      1.00      0.95        10
