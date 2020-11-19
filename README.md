@@ -1,7 +1,7 @@
 # tooth-classification
 
-- [model training](https://github.com/minesh1291/tooth-classification/blob/main/notebooks/Nov19/keras_binary_classification.ipynb)
-- [inference and evaluation](https://github.com/minesh1291/tooth-classification/blob/main/notebooks/Nov19/keras_kfold_inference.ipynb)
+- [model training](https://github.com/minesh1291/tooth-classification/blob/main/notebooks/Nov19-1/classification-19-1.ipynb)
+- [inference and evaluation](https://github.com/minesh1291/tooth-classification/blob/main/notebooks/Nov19-1/kfold_inference-19-1.ipynb)
 
 # Evaluation Report
 
@@ -9,19 +9,25 @@
 n_train = 0:52, 1:40
 n_test  = 0:13, 1:10
 
-              precision    recall  f1-score   support
+precision    recall  f1-score   support
 
-           0       0.92      0.92      0.92        13
-           1       0.90      0.90      0.90        10
+      1 root       1.00      0.92      0.96        13
+  multi-root       0.91      1.00      0.95        10
 
-    accuracy                           0.91        23
-   macro avg       0.91      0.91      0.91        23
-weighted avg       0.91      0.91      0.91        23
+    accuracy                           0.96        23
+   macro avg       0.95      0.96      0.96        23
+weighted avg       0.96      0.96      0.96        23
 
-Accuracy: 0.91, 21/23
-Crossentropy 0.2972
-
+Accuracy: 0.96, 22/23
+Crossentropy 0.1343
 ```
+Confusion Matrix
+|                 |	(pred, 1 root)  |	(pred, multi-root) |
+|-----------------|----------------:|-------------------:|
+| **(ture, 1 root)**     |        12	  |   1                |
+| **(ture, multi-root)** |	       0    |   10               |
+
+
 
 # Files
 ```
